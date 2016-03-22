@@ -12,27 +12,27 @@ css-grid requires the following dependencies to work.
 ### Installing css-grid
 Be sure to install the dependencies above before attempting to install this repo.
 
-1. Open a command prompt and change directories to your prefered developing environment.
++ Open a command prompt and change directories to your prefered developing environment.
 
-2. Type in the following command.
++ Type in the following command.
 
 ```bash
 git pull https://github.com/typicalmike002/css-grid.git
 ```
 
-3. Install the Grunt CLI (skip if you already have done this)
++ Install the Grunt CLI (skip if you already have done this)
 
 ```bash
 npm install -g grunt-cli
 ```
 
-4. Install Grunt and all grunt Plugins listed in the package.json file.
++ Install Grunt and all grunt Plugins listed in the package.json file.
 
 ```bash
 npm install
 ```
 
-5. Test it by running Grunt's Watch task to ensure everything was loaded correctly.
++ Test it by running Grunt's Watch task to ensure everything was loaded correctly.
 
 ```bash
 grunt watch
