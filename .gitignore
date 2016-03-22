@@ -3,3 +3,6 @@ node_modules
 
 # Ignore SASS cache
 .sass-cache
+
+# Ignore Mac Specific Hidden Files
+.DS_Store
