@@ -1,0 +1,24 @@
+/**
+ * _enhanced.scss
+ *
+ * Enhanced Styles that load only for modern browsers.
+*/
+
+
+
+
+// Document level
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+
+
+// Embedded Content
+svg:not(:root) {
+	overflow: hidden;
+}

@@ -1,0 +1,89 @@
+/**
+ * _grid.scss
+ *
+ * Adds the grid block and all of it's elements and modifiers.
+*/
+
+
+
+
+// Basic Row Element
+.grid_row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+
+// Basic Column Element (mobile settings)
+.grid_column {
+	flex: 0 0 $hundred;
+}
+
+
+
+
+// Adds gutters to a row Element and its grid_column children
+.grid_row--gutters {
+	margin: -1em 0 1em -1em;
+}
+
+.grid_row--gutters > .grid_column {
+	padding: 1em 0 0 1em;
+}
+
+
+
+
+// Flex alignment modifiers for row
+.grid_row--top {
+	align-items: flex-start;
+}
+
+.grid_row--bottom {
+	align-items: flex-end;
+}
+
+.grid_row--center {
+	align-items: center;
+}
+
+
+
+
+// Flex alignment modifiers for column
+.grid_column--top {
+	align-self: flex-start;
+}
+
+.grid_column--bottom {
+	align-self: flex-end;
+}
+
+.grid_column--center {
+	align-self: center;
+}
+
+
+
+
+// Adds Resonsive grid effect using values set in _variables.scss
+@media only screen and (min-width: $tabletWidth) {
+	
+	.grid_column {
+		flex: 1;
+	}
+
+	.grid_column--hlf {
+		flex: 0 0 $hundred/2;
+	}
+
+	.grid_column--thrd {
+		flex: 0 0 $hundred/3;
+	}
+
+	.grid_column--frth {
+		flex: 0 0 $hundred/4;
+	}
+}

@@ -1,7 +1,40 @@
-/*-------------------------*\
-	#Imports
-\*-------------------------*/
+/**
+ * style.scss
+ *
+ * Loads all .scss files into style.css while the grunt watch task is running.
+*/
 
-@import "layout/grid";
 
 
+
+/* Viewpoint Widths */
+@-webkit-viewport{width:device-width;}
+@-moz-viewport{width:device-width;}
+@-ms-viewport{width:device-width;}
+@-o-viewport{width:device-width;}
+@viewport{width:device-width;}
+
+
+
+
+/* Libraries */
+@import "compass/css3";
+
+
+
+
+/* All Browsers */
+@import "variables/variables";
+
+@import "foundation/foundation";
+
+@import "grid/grid";
+
+
+
+
+/* Non Legacy Browers */
+@media only all {
+
+	@import "enhanced/enhanced";
+}

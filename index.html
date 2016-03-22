@@ -4,118 +4,140 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="wrap">
+	<header><h1 class="center">CSS Grid Working Examples</h1></header>
 
-		<!--Test each col-# and how it could be used to fill the wrap differently -->
-		<div class="row">
-			<div class="col-1">
-				<h1>Col-1</h1>
+	<section class="auto-size-examples">
+		<header><h2 class="center">Auto Size Examples</h2></header>
+
+		<!-- Full Width Example -->
+		<div class="grid_row grid_row--gutters">
+			<div class="grid_column">
+				<p class="sample center">Default Column</p>
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-2">
-				<h2>Col-2</h2>
-			</div>
-			<div class="col-5">
-				<h2>Col-5</h2>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-3">
-				<h3>Col-3</h3>
-			</div>
-			<div class="col-3">
-				<h3>Col-3</h3>
-			</div>
-		</div>
+		<!-- 2 Auto Width Columns Example -->
+		<div class="grid_row grid_row--gutters">
 		
-		<div class="row">
-			<div class="col-4">
-				<h3>Col-4</h3>
+			<div class="grid_column">
+				<p class="sample center">Auto Sized to 50%</p>
 			</div>
-			<div class="col-4">
-				<h3>Col-4</h3>
+
+			<div class="grid_column">
+				<p class="sample center">Auto Sized to 50%</p>
 			</div>
-			<div class="col-9">
-				<h3>Col-9</h3>
-			</div>
+
 		</div>
 
-		<div class="row">
-			<div class="col-5">
-				<h3>Col-5</h3>
+		<!-- 3 Auto Width Columns Example -->
+		<div class="grid_row grid_row--gutters">
+			
+			<div class="grid_column">
+				<p class="sample center">Auto Sized to 33.333%</p>
 			</div>
-			<div class="col-5">
-				<h3>Col-5</h3>
+
+			<div class="grid_column">
+				<p class="sample center">Auto Sized to 33.333%</p>
 			</div>
-			<div class="col-5">
-				<h3>Col-5</h3>
+
+
+			<div class="grid_column">
+				<p class="sample center">Auto Sized to 33.333%</p>
 			</div>
-		</div>
-	
-		<div class="row">
-			<div class="col-6">
-				<h3>Col-6</h3>
-			</div>
-			<div class="col-6">
-				<h3>Col-6</h3>
-			</div>
-			<div class="col-6">
-				<h3>Col-6</h3>
-			</div>
-			<div class="col-13">
-				<h3>Col-13</h3>
-			</div>
+
 		</div>
 
-		<div class="row">
-			<div class="col-7">
-				<h3>Col-7</h3>
+		<!-- 4 Auto Width Columns Example -->
+		<div class="grid_row grid_row--gutters">
+			
+			<div class="grid_column">
+				<p class="sample center">Auto Sized to 25%</p>
 			</div>
-			<div class="col-7">
-				<h3>Col-7</h3>
+
+			<div class="grid_column">
+				<p class="sample center">Auto Sized to 25%</p>
 			</div>
-			<div class="col-7">
-				<h3>Col-7</h3>
+
+			<div class="grid_column">
+				<p class="sample center">Auto Sized to 25%</p>
 			</div>
-			<div class="col-7">
-				<h3>Col-7</h3>
+
+			<div class="grid_column">
+				<p class="sample center">Auto Sized to 25%</p>
 			</div>
 		</div>
+	</section>
 
-		<div class="row">
-			<div class="col-8">
-				<h3>Col-8</h3>
+	<section class="fixed-size-examples">
+		<header><h2 class="center">Fixed Size Examples</h2></header>
+		
+		<!-- 33% Fixed Width Columns Example -->
+		<div class="grid_row grid_row--gutters">
+			
+			<div class="grid_column grid_column--thrd">
+				<p class="sample center">Fixed Sized to 33%</p>
 			</div>
-			<div class="col-8">
-				<h3>Col-8</h3>
+
+			<div class="grid_column">
+				<p class="sample center">Auto fill space</p>
 			</div>
-			<div class="col-8">
-				<h3>Col-8</h3>
-			</div>
-			<div class="col-5">
-				<h3>Col-5</h3>
-			</div>
+
 		</div>
 
-		<div class="row">
-			<div class="col-9">
-				<h3>Col-9</h3>
+		<!-- 25% Fixed Width Columns Example -->
+		<div class="grid_row grid_row--gutters">
+		
+			<div class="grid_column">
+				<p class="sample center">Auto fill space</p>
 			</div>
-			<div class="col-9">
-				<h3>Col-9</h3>
+
+			<div class="grid_column">
+				<p class="sample center">Auto fill space</p>
 			</div>
-			<div class="col-9">
-				<h3>Col-9</h3>
+
+			<div class="grid_column grid_column--frth">
+				<p class="sample center">Fixed Sized to 25%</p>
 			</div>
-			<div class="col-9">
-				<h3>Col-9</h3>
+
+		</div>
+
+		<!-- 50% Fixed Width Column Example -->
+		<div class="grid_row grid_row--gutters">
+		
+			<div class="grid_column">
+				<p class="sample center">Auto fill space</p>
 			</div>
-			<div class="col-9">
-				<h3>Col-9</h3>
+
+			<div class="grid_column grid_column--hlf">
+				<p class="sample center">Fixed Sized to 50%</p>
 			</div>
-	</div>
+
+			<div class="grid_column">
+				<p class="sample center">Auto fill space</p>
+			</div>
+
+		</div>
+
+	</section>
+	<section class="flex-modifier-examples">
+		<header><h2 class="center">Modifier Examples</h2></header>
+		
+		<!-- Column Modifiers Example -->
+		<div class="grid_row grid_row--gutters grid_row--center"style="height:400px;">
+
+			<div class="grid_column grid_column--top">
+				<p class="sample center">Top Column Modifier</p>
+			</div>
+
+			<div class="grid_column grid_column--center">
+				<p class="sample center">Center Column Modifier</p>
+			</div>
+
+			<div class="grid_column grid_column--bottom">
+				<p class="sample center">Bottom Column Modifier</p>
+			</div>
+		</div>
+	</section>
+
 </body>
 </html>

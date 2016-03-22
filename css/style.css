@@ -1,0 +1,368 @@
+/**
+ * style.scss
+ *
+ * Loads all .scss files into style.css while the grunt watch task is running.
+*/
+/* Viewpoint Widths */
+@-webkit-viewport {
+  width: device-width;
+}
+@-moz-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
+/* Libraries */
+/* All Browsers */
+/**
+ * variables.scss
+ *
+ * SASS global variables used by the rest of the project.
+*/
+/**
+ * _foundation.scss
+ *
+ * Core Styles served to all browers.
+ *
+ * Based on normalize.css: 
+ * "v3.0.3 | MIT License | github.com/necolas/normalize.css"
+*/
+/* line 14, sass/foundation/_foundation.scss */
+html {
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+/* line 18, sass/foundation/_foundation.scss */
+body {
+  font-size: 1em;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+@media only screen and (min-width: 24em) {
+  /* line 26, sass/foundation/_foundation.scss */
+  body {
+    font-size: 1.125em;
+  }
+}
+@media only screen and (min-width: 48em) {
+  /* line 33, sass/foundation/_foundation.scss */
+  body {
+    font-size: 1.25em;
+  }
+}
+/* line 42, sass/foundation/_foundation.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 56, sass/foundation/_foundation.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 64, sass/foundation/_foundation.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 69, sass/foundation/_foundation.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 78, sass/foundation/_foundation.scss */
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* line 86, sass/foundation/_foundation.scss */
+h1,
+h2,
+h3 {
+  margin: 1em 0;
+}
+
+/* line 95, sass/foundation/_foundation.scss */
+p {
+  padding: 1em;
+}
+
+/* line 99, sass/foundation/_foundation.scss */
+.sample {
+  border: 1px solid black;
+}
+
+/* line 106, sass/foundation/_foundation.scss */
+.center {
+  text-align: center;
+}
+
+/* line 113, sass/foundation/_foundation.scss */
+img {
+  border: 0;
+}
+
+/* line 121, sass/foundation/_foundation.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 131, sass/foundation/_foundation.scss */
+button {
+  overflow: visible;
+}
+
+/* line 135, sass/foundation/_foundation.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 140, sass/foundation/_foundation.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-apperance: button;
+  cursor: pointer;
+}
+
+/* line 148, sass/foundation/_foundation.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 153, sass/foundation/_foundation.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 159, sass/foundation/_foundation.scss */
+input {
+  line-height: normal;
+}
+
+/* line 163, sass/foundation/_foundation.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 169, sass/foundation/_foundation.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 174, sass/foundation/_foundation.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+/* line 179, sass/foundation/_foundation.scss */
+fieldset {
+  border: 1px solid #BBB;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 185, sass/foundation/_foundation.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 190, sass/foundation/_foundation.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 194, sass/foundation/_foundation.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 201, sass/foundation/_foundation.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 206, sass/foundation/_foundation.scss */
+td,
+th {
+  padding: 0;
+}
+
+/**
+ * _grid.scss
+ *
+ * Adds the grid block and all of it's elements and modifiers.
+*/
+/* line 11, sass/grid/_grid.scss */
+.grid_row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+/* line 20, sass/grid/_grid.scss */
+.grid_column {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+/* line 28, sass/grid/_grid.scss */
+.grid_row--gutters {
+  margin: -1em 0 1em -1em;
+}
+
+/* line 32, sass/grid/_grid.scss */
+.grid_row--gutters > .grid_column {
+  padding: 1em 0 0 1em;
+}
+
+/* line 40, sass/grid/_grid.scss */
+.grid_row--top {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* line 44, sass/grid/_grid.scss */
+.grid_row--bottom {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+/* line 48, sass/grid/_grid.scss */
+.grid_row--center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 56, sass/grid/_grid.scss */
+.grid_column--top {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+}
+
+/* line 60, sass/grid/_grid.scss */
+.grid_column--bottom {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+
+/* line 64, sass/grid/_grid.scss */
+.grid_column--center {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+
+@media only screen and (min-width: 24em) {
+  /* line 74, sass/grid/_grid.scss */
+  .grid_column {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+
+  /* line 78, sass/grid/_grid.scss */
+  .grid_column--hlf {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+
+  /* line 82, sass/grid/_grid.scss */
+  .grid_column--thrd {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.33333%;
+        -ms-flex: 0 0 33.33333%;
+            flex: 0 0 33.33333%;
+  }
+
+  /* line 86, sass/grid/_grid.scss */
+  .grid_column--frth {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
+}
+/* Non Legacy Browers */
+@media only all {
+  /**
+   * _enhanced.scss
+   *
+   * Enhanced Styles that load only for modern browsers.
+  */
+  /* line 11, sass/enhanced/_enhanced.scss */
+  html {
+    box-sizing: border-box;
+  }
+
+  /* line 15, sass/enhanced/_enhanced.scss */
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /* line 22, sass/enhanced/_enhanced.scss */
+  svg:not(:root) {
+    overflow: hidden;
+  }
+}
