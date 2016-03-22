@@ -46,12 +46,12 @@ See the file 'index.html' for various working examples using the css-grid.
 ### Grunt Plugins
 The following list explains what grunt is doing while it watches for changes and why I've included them as default into this repo.
 
-1. watch: Watches for changes in files, and runs other tasks when a change is detected.
+1. **watch:** Watches for changes in files, and runs other tasks when a change is detected.
 
-2. compass: Adds SASS and SCSS support to the repo to extend the capabilities of CSS.
+2. **compass:** Adds SASS and SCSS support to the repo to extend the capabilities of CSS.
 
-3. cssmin: Minifies CSS files for speed optimization.
+3. **cssmin:** Minifies CSS files for speed optimization.
 
-4. combine-mq: Combines all Media Queries that match values into a single query for speed optimization.
+4. **combine-mq:** Combines all Media Queries that match values into a single query for speed optimization.
 
-5. autoprefixer: Automatically adds brower prefixes such as -webkit, -moz, -ms, and -o where appropriate.  This uses the website caniuse.com database for choosing when it is appropriate.
+5. **autoprefixer:** Automatically adds brower prefixes such as -webkit, -moz, -ms, and -o where appropriate.  This uses the website caniuse.com database for choosing when it is appropriate.
