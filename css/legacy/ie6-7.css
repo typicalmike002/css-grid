@@ -1,0 +1,13 @@
+/**
+ * ie6-7.css
+ *
+ * Adds boxsizing support to old ie6-7 browsers.
+*/
+
+html {
+	box-sizing: border-box; *behavior: url(../polyfills/boxsizing.htc);
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
